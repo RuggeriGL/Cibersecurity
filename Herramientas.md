@@ -37,15 +37,15 @@
 
  	 ***Ejemplo de comando***: gobuster dir -u http://10.10.88.69 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
-
 	gobuster: Es el comando principal para ejecutar la herramienta GoBuster, una utilidad de escaneo de directorios y archivos en sitios web y servidores.
 
-    	dir: Indica que deseas realizar un escaneo de directorios y archivos en el sitio web proporcionado. GoBuster también admite otros modos como dns para buscar subdominios, pero en este caso, estás 	utilizando el modo dir.
+	dir: Indica que deseas realizar un escaneo de directorios y archivos en el sitio web proporcionado. GoBuster también admite otros modos como dns para buscar subdominios, pero en este caso, estás 	utilizando el modo dir.
 
-    	-u http://10.10.88.69: La opción -u especifica la URL del objetivo que deseas escanear. En este caso, es http://10.10.88.69. Reemplaza la dirección IP con la dirección IP o el dominio del objetivo r
+	-u http://10.10.88.69: La opción -u especifica la URL del objetivo que deseas escanear. En este caso, es http://10.10.88.69. Reemplaza la dirección IP con la dirección IP o el dominio del objetivo r
   	real que deseas escanear.
 
-    	-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt: La opción -w indica el archivo de diccionario que se utilizará para realizar la búsqueda de directorios y archivos ocultos.
+	-w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt: La opción -w indica el archivo de diccionario que se utilizará para realizar la búsqueda de directorios y archivos ocultos.
+  
 	En este ejemplo, estás utilizando el archivo de diccionario directory-list-2.3-medium.txt que se encuentra en el directorio /usr/share/wordlists/dirbuster/. 
 	Este archivo de diccionario contiene una lista de palabras (nombres de directorios y archivos) que GoBuster probará en el sitio web objetivo para encontrar coincidencias.
 
@@ -63,7 +63,7 @@
 
   	-a: La opción -a es un modificador que indica a enum4linux que realice todas las comprobaciones básicas de enumeración. Esto incluye la enumeración de usuarios, grupos, comparticiones y otros 	detalles del sistema objetivo.
 
-    	10.10.88.69: Esta es la dirección IP del sistema Windows o servidor SMB al que se dirigirá el comando enum4linux para realizar la enumeración.
+	10.10.88.69: Esta es la dirección IP del sistema Windows o servidor SMB al que se dirigirá el comando enum4linux para realizar la enumeración.
 
   
 
@@ -96,12 +96,11 @@
 	
 	***Ejemplo de comando***: hydra -l jan -P /usr/share/wordlists/rockyou.txt ssh://10.10.123.184
 
-
 	hydra: Este es el comando principal para ejecutar la herramienta Hydra. Se usa para iniciar el ataque de fuerza bruta.
-	
-    	-l jan: La opción -l especifica el nombre de usuario para el que intentaremos adivinar la contraseña. En este caso, el nombre de usuario es "jan".
 
-    	-P /usr/share/wordlists/rockyou.txt: La opción -P se utiliza para especificar el archivo de diccionario que contiene las contraseñas que se probarán en el ataque de fuerza bruta. 
+  	-l jan: La opción -l especifica el nombre de usuario para el que intentaremos adivinar la contraseña. En este caso, el nombre de usuario es "jan".
+
+	-P /usr/share/wordlists/rockyou.txt: La opción -P se utiliza para especificar el archivo de diccionario que contiene las contraseñas que se probarán en el ataque de fuerza bruta. 
 	Aquí, se utiliza el archivo "rockyou.txt", que es un archivo de diccionario muy conocido que contiene una gran cantidad de contraseñas reales y comunes.
 
 	ssh://10.10.123.184: Este es el protocolo y la dirección IP del objetivo al que se dirigirá el ataque. 
@@ -120,8 +119,7 @@
 
 	Aquí hay un ejemplo de cómo se podría ejecutar un ataque de escalado de privilegios LXD:
 
-
-    	Verificar que el usuario actual es parte del grupo LXD:
+	Verificar que el usuario actual es parte del grupo LXD:
 	
   	***Comando***: id
 
