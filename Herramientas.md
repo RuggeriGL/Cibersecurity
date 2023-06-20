@@ -219,6 +219,7 @@
 	Steghide también soporta cifrado. Esto significa que la información oculta puede ser cifrada con una contraseña, proporcionando una capa adicional de seguridad. Solo alguien que conozca la 		contraseña correcta podrá extraer y descifrar la información oculta.
 
 	Ejemplo de comando para ocultar un archivo: steghide embed -cf picture.jpg -ef secret.txt
+
 	En este ejemplo, embed es el comando para incrustar información, -cf picture.jpg especifica el archivo de portador (la imagen donde se ocultará la información) y -ef secret.txt especifica el 		archivo que se va a ocultar.
 
   	Ejemplo de comando para extraer un archivo oculto: steghide extract -sf picture.jpg
