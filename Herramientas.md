@@ -25,6 +25,8 @@
 
     -oA allPorts: La opción -oA indica a Nmap que guarde la salida del escaneo en un archivo con el nombre proporcionado (allPorts en este caso) en tres formatos diferentes: normal, XML y grepable.
 
+  
+
 
 
 - ***GoBuster***: herramienta de escaneo de directorios y archivos en sitios web y servidores, así como de fuerza bruta de subdominios, utilizando palabras de un diccionario. 
@@ -48,6 +50,8 @@
 
 
 
+
+
 - ***enum4linux***: Herramienta de enumeración basada en Perl. Ayuda a obtener información sobre usuarios, grupos, comparticiones.
 
 	
@@ -59,6 +63,8 @@
     -a: La opción -a es un modificador que indica a enum4linux que realice todas las comprobaciones básicas de enumeración. Esto incluye la enumeración de usuarios, grupos, comparticiones y otros detalles del sistema objetivo.
 
     10.10.88.69: Esta es la dirección IP del sistema Windows o servidor SMB al que se dirigirá el comando enum4linux para realizar la enumeración.
+
+  
 
 
 
@@ -82,6 +88,8 @@
 
 
 
+
+
 - ***Hydra***: Herramienta para descifrar contraseñas por fuerza bruta. 
 
 	
@@ -97,7 +105,9 @@
 
     ssh://10.10.123.184: Este es el protocolo y la dirección IP del objetivo al que se dirigirá el ataque. 
 	En este caso, el protocolo es SSH (Secure Shell), que es un protocolo de red utilizado para acceder de forma segura a sistemas remotos. La dirección IP del objetivo es "10.10.123.184".
-	
+
+
+ 
 	
 	
 - ***LXD***: LXD (Linux Container Daemon) es una herramienta para gestionar contenedores Linux a nivel de sistema operativo. Estos contenedores son similares a las máquinas virtuales, 
@@ -157,6 +167,8 @@
 	Es importante destacar que este método de escalado de privilegios solo funcionará si el usuario actual tiene acceso al grupo LXD en el sistema comprometido y si LXD está mal configurado o no tiene las restricciones de seguridad adecuadas.
 	Además, este método no funcionará si el sistema no tiene LXD instalado.
 
+
+
 - ***Burp Suite***: Plataforma integrada para realizar pruebas de seguridad de aplicaciones web. Su funcionalidad incluye interceptación y modificación de solicitudes, escaneo automático de vulnerabilidades, repetidor (para manipular y reenviar solicitudes individuales), decodificador de datos y mucho más.
 
 Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
@@ -166,6 +178,9 @@ Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliam
 	. Configura tu navegador para que use el proxy de Burp Suite (127.0.0.1 en el puerto 8080) para el tráfico HTTP y HTTPS.
 	. Habilita la intercepción en la pestaña "Intercept" y navega por la web. El tráfico se interceptará en Burp Suite, permitiéndote analizar y modificar las solicitudes.
 	. Para escanear automáticamente las vulnerabilidades, puedes utilizar la pestaña "Scanner" y para reenviar las solicitudes modificadas, puedes utilizar la herramienta "Repeater".
+
+
+ 
 
 - ***ExifTool***: Es una herramienta de línea de comandos utilizada para leer, escribir y manipular metadatos en una variedad de archivos, particularmente fotos y vídeos. Los metadatos pueden incluir detalles como el modelo de la cámara, la longitud focal, la hora en que se tomó la foto, la ubicación (si el dispositivo tenía GPS) y más.
 
