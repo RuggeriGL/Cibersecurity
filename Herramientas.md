@@ -1,7 +1,7 @@
 
 - ***NMAP***: "Network Mapper", es una herramienta de escaneo de red de código abierto y gratuita que se utiliza para descubrir hosts y servicios en una red de computadoras.
 	
-	*Ejemplo de comando*: sudo nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 192.168.11.161 -oA allPorts
+	***Ejemplo de comando***: sudo nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 192.168.11.161 -oA allPorts
 	
 	sudo: Este comando se utiliza para ejecutar el siguiente comando con privilegios de superusuario (administrador). Algunas funciones de nmap pueden requerir privilegios elevados para funcionar correctamente.
 
@@ -35,7 +35,7 @@
 	Comando: gobuster dns -d example.com -w wordlist.txt
 
 
- 	 *Ejemplo de comando*: gobuster dir -u http://10.10.88.69 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+ 	 ***Ejemplo de comando***: gobuster dir -u http://10.10.88.69 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
 
 	gobuster: Es el comando principal para ejecutar la herramienta GoBuster, una utilidad de escaneo de directorios y archivos en sitios web y servidores.
@@ -56,7 +56,7 @@
 - ***enum4linux***: Herramienta de enumeración basada en Perl. Ayuda a obtener información sobre usuarios, grupos, comparticiones.
 
 	
-	*Ejemplo de comando*: /usr/share/enum4linux/enum4linux.pl -a 10.10.88.69. 
+	***Ejemplo de comando***: /usr/share/enum4linux/enum4linux.pl -a 10.10.88.69. 
 
 	
 	/usr/share/enum4linux/enum4linux.pl: Esta es la ruta al script Perl de la herramienta enum4linux en el sistema. El archivo "enum4linux.pl" es un script Perl que contiene el código necesario para 	ejecutar la herramienta.
@@ -72,7 +72,7 @@
 - ***John the Ripper***: Herramienta de cracking de contraseñas offline y encriptadas en diferentes formatos. Trabaja descifrando hashes de contraseñas almacenados en archivos.
 
 	
-	*Ejemplo de comando*: john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt  ||  john --wordlist=/usr/share/wordlists/rockyou.txt --format=MD5 hashes.txt
+	***Ejemplo de comando***: john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt  ||  john --wordlist=/usr/share/wordlists/rockyou.txt --format=MD5 hashes.txt
 	
 	
 	john: Este es el comando principal para ejecutar la herramienta John the Ripper.
@@ -94,7 +94,7 @@
 - ***Hydra***: Herramienta para descifrar contraseñas por fuerza bruta. 
 
 	
-	*Ejemplo de comando*: hydra -l jan -P /usr/share/wordlists/rockyou.txt ssh://10.10.123.184
+	***Ejemplo de comando***: hydra -l jan -P /usr/share/wordlists/rockyou.txt ssh://10.10.123.184
 
 
 	hydra: Este es el comando principal para ejecutar la herramienta Hydra. Se usa para iniciar el ataque de fuerza bruta.
@@ -123,45 +123,45 @@
 
     	Verificar que el usuario actual es parte del grupo LXD:
 	
-  	*Comando*: id
+  	***Comando***: id
 
 
 	Inicializar LXD si aún no está configurado:
 	
-  	*Comando*: lxd init
+  	***Comando***: lxd init
 
 
 	(Acepta los valores predeterminados o personaliza la configuración según sea necesario)
 	Importar una imagen de contenedor en el host comprometido. Por ejemplo, descarga una imagen de Alpine Linux:
 
-	*Comando*: wget https://images.linuxcontainers.org/images/alpine/3.14/amd64/default/20211012_13:00/lxd.tar.xz
-	*Comando*: wget https://images.linuxcontainers.org/images/alpine/3.14/amd64/default/20211012_13:00/rootfs.squashfs
+	***Comando***: wget https://images.linuxcontainers.org/images/alpine/3.14/amd64/default/20211012_13:00/lxd.tar.xz
+	***Comando***: wget https://images.linuxcontainers.org/images/alpine/3.14/amd64/default/20211012_13:00/rootfs.squashfs
 
 
 	Importar la imagen descargada a LXD:
 
-	*Comando*: lxc image import lxd.tar.xz rootfs.squashfs --alias alpine
+	***Comando***: lxc image import lxd.tar.xz rootfs.squashfs --alias alpine
 
 
 	Crear y ejecutar un nuevo contenedor utilizando la imagen importada:
 
-	*Comando*: lxc init alpine my-container -c security.privileged=true
+	***Comando***: lxc init alpine my-container -c security.privileged=true
 
 
 	Montar el sistema de archivos del host en el contenedor:
 
-	*Comando*: lxc config device add my-container host-root disk source=/ path=/mnt/root recursive=true
+	***Comando***: lxc config device add my-container host-root disk source=/ path=/mnt/root recursive=true
 
 
 	Iniciar y unirse al contenedor:
 
-	*Comando*: lxc start my-container
-	*Comando*: lxc exec my-container /bin/sh
+	***Comando***: lxc start my-container
+	***Comando***: lxc exec my-container /bin/sh
 
 
 	Navegar al directorio /mnt/root dentro del contenedor, que ahora es un punto de montaje del sistema de archivos del host:
 
-	*Comando*: cd /mnt/root
+	***Comando***: cd /mnt/root
 
 	Una vez dentro del contenedor, tendrás acceso completo al sistema de archivos del host y podrás explorarlo para buscar información sensible o modificar archivos según sea necesario. 
 	Esto efectivamente escala tus privilegios en el sistema.
@@ -172,7 +172,7 @@
 
 - ***Burp Suite***: Plataforma integrada para realizar pruebas de seguridad de aplicaciones web. Su funcionalidad incluye interceptación y modificación de solicitudes, escaneo automático de vulnerabilidades, repetidor (para manipular y reenviar solicitudes individuales), decodificador de datos y mucho más.
 
-	*Ejemplo de comando*: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
+	***Ejemplo de comando***: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
 
 	Abre Burp Suite.
   	En la pestaña "Proxy" -> "Options" -> "Add", asegúrate de tener un listener en la interfaz de bucle invertido (127.0.0.1) en el puerto 8080 (o el puerto que prefieras).
@@ -184,13 +184,13 @@
  
 - ***ExifTool***: Es una herramienta de línea de comandos utilizada para leer, escribir y manipular metadatos en una variedad de archivos, particularmente fotos y vídeos. Los metadatos pueden incluir detalles como el modelo de la cámara, la longitud focal, la hora en que se tomó la foto, la ubicación (si el dispositivo tenía GPS) y más.
 
-	*Ejemplo de comando*: exiftool mi_foto.jpg
+	***Ejemplo de comando***: exiftool mi_foto.jpg
 
 	exiftool: Este es el comando principal para ejecutar la herramienta ExifTool.
 
 	mi_foto.jpg: Reemplaza "mi_foto.jpg" con el nombre del archivo cuyos metadatos deseas leer. Si tienes una carpeta llena de imágenes y quieres ver los metadatos de todas ellas, puedes hacerlo con: 	exiftool *.jpg
 
-	*Ejemplo de comando para eliminar todos los metadatos*: exiftool -all= mi_foto.jpg
+	***Ejemplo de comando para eliminar todos los metadatos***: exiftool -all= mi_foto.jpg
 
 	-all=: La opción -all= le dice a ExifTool que elimine todos los metadatos del archivo especificado. Reemplaza "mi_foto.jpg" con el nombre del archivo cuyos metadatos deseas eliminar.
 
@@ -199,7 +199,7 @@
 
 	Si tienes una imagen que sospechas que contiene un archivo ZIP incrustado, puedes utilizar Binwalk para buscar la firma del archivo ZIP en los datos binarios de la imagen. Si Binwalk encuentra la 	firma, puedes utilizarlo para extraer el archivo ZIP de la imagen.
 
-  	*Ejemplo de comando*: binwalk --dd='.*' image.jpg
+  	***Ejemplo de comando***: binwalk --dd='.*' image.jpg
 
   	 La opción --dd='.*' especifica que Binwalk debería descomprimir archivos de cualquier tipo (la expresión regular .* coincide con cualquier secuencia de caracteres).
 
@@ -219,11 +219,11 @@
 
 	Steghide también soporta cifrado. Esto significa que la información oculta puede ser cifrada con una contraseña, proporcionando una capa adicional de seguridad. Solo alguien que conozca la 		contraseña correcta podrá extraer y descifrar la información oculta.
 
-	*Ejemplo de comando para ocultar un archivo*: steghide embed -cf picture.jpg -ef secret.txt
+	***Ejemplo de comando para ocultar un archivo***: steghide embed -cf picture.jpg -ef secret.txt
 
 	En este ejemplo, embed es el comando para incrustar información, -cf picture.jpg especifica el archivo de portador (la imagen donde se ocultará la información) y -ef secret.txt especifica el 		archivo que se va a ocultar.
 
-  	*Ejemplo de comando para extraer un archivo oculto*: steghide extract -sf picture.jpg
+  	***Ejemplo de comando para extraer un archivo oculto***: steghide extract -sf picture.jpg
 
 	Donde extract es el comando para extraer información y -sf picture.jpg especifica el archivo del que se extraerá la información. Steghide te pedirá la contraseña que se utilizó para incrustar la 	información.	
 
