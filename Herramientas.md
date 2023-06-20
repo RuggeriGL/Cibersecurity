@@ -203,3 +203,12 @@ Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliam
 
   	 La opción --dd='.*' especifica que Binwalk debería descomprimir archivos de cualquier tipo (la expresión regular .* coincide con cualquier secuencia de caracteres).
 
+
+- ***CyberChef***: Herramienta web de código abierto que se utiliza para el análisis de datos, la conversión de formatos y la ciberseguridad. Tiene una interfaz gráfica que permite a los usuarios combinar 	diferentes "operaciones" para manipular datos de entrada de diversas formas. Algunas de estas operaciones incluyen:
+
+	Conversión entre diferentes codificaciones y formatos de datos (por ejemplo, Base64, hexadecimal, binario, etc.)
+	Cifrado y descifrado con varios algoritmos (por ejemplo, AES, DES, RSA, etc.)
+	Análisis y manipulación de datos de red (por ejemplo, análisis de paquetes IP, construcción de consultas HTTP, etc.)
+	Análisis de hash y generación de hash (por ejemplo, MD5, SHA1, etc.)
+	Y muchas otras operaciones relacionadas con la ciberseguridad y el análisis de datos.
+
