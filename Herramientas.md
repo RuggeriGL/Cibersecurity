@@ -173,15 +173,15 @@
 
 Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
 
-	 Abre Burp Suite.
-	 En la pestaña "Proxy" -> "Options" -> "Add", asegúrate de tener un listener en la interfaz de bucle invertido (127.0.0.1) en el puerto 8080 (o el puerto que prefieras).
-	 Configura tu navegador para que use el proxy de Burp Suite (127.0.0.1 en el puerto 8080) para el tráfico HTTP y HTTPS.
-	 Habilita la intercepción en la pestaña "Intercept" y navega por la web. El tráfico se interceptará en Burp Suite, permitiéndote analizar y modificar las solicitudes.
-	 Para escanear automáticamente las vulnerabilidades, puedes utilizar la pestaña "Scanner" y para reenviar las solicitudes modificadas, puedes utilizar la herramienta "Repeater".
+	 
+  Abre Burp Suite.
+  En la pestaña "Proxy" -> "Options" -> "Add", asegúrate de tener un listener en la interfaz de bucle invertido (127.0.0.1) en el puerto 8080 (o el puerto que prefieras).
+  Configura tu navegador para que use el proxy de Burp Suite (127.0.0.1 en el puerto 8080) para el tráfico HTTP y HTTPS.
+  Habilita la intercepción en la pestaña "Intercept" y navega por la web. El tráfico se interceptará en Burp Suite, permitiéndote analizar y modificar las solicitudes.
+  Para escanear automáticamente las vulnerabilidades, puedes utilizar la pestaña "Scanner" y para reenviar las solicitudes modificadas, puedes utilizar la herramienta "Repeater".
 
 
  
-
 - ***ExifTool***: Es una herramienta de línea de comandos utilizada para leer, escribir y manipular metadatos en una variedad de archivos, particularmente fotos y vídeos. Los metadatos pueden incluir detalles como el modelo de la cámara, la longitud focal, la hora en que se tomó la foto, la ubicación (si el dispositivo tenía GPS) y más.
 
 	Ejemplo de comando: exiftool mi_foto.jpg
