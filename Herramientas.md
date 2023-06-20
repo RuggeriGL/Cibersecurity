@@ -193,3 +193,13 @@ Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliam
 	Ejemplo de comando para eliminar todos los metadatos: exiftool -all= mi_foto.jpg
 
 	-all=: La opción -all= le dice a ExifTool que elimine todos los metadatos del archivo especificado. Reemplaza "mi_foto.jpg" con el nombre del archivo cuyos metadatos deseas eliminar.
+
+
+- ***Binwalk***: Funciona de manera parecida a Exiftool. Es una herramienta para el análisis de archivos binarios y es especialmente útil para el análisis de firmware. Binwalk puede escanear un archivo binario en busca de firmas conocidas y mostrar información sobre cualquier coincidencia que encuentre. A menudo se utiliza para descubrir los contenidos de un firmware, extraer archivos de un blob de datos binarios, o incluso para realizar ingeniería inversa. Binwalk tambíen es capaz de reconocer firmas de archivo como las de los archivos ZIP.
+
+	Si tienes una imagen que sospechas que contiene un archivo ZIP incrustado, puedes utilizar Binwalk para buscar la firma del archivo ZIP en los datos binarios de la imagen. Si Binwalk encuentra la 	firma, puedes utilizarlo para extraer el archivo ZIP de la imagen.
+
+  	Ejemplo de comando: binwalk --dd='.*' image.jpg
+
+  	 La opción --dd='.*' especifica que Binwalk debería descomprimir archivos de cualquier tipo (la expresión regular .* coincide con cualquier secuencia de caracteres).
+
