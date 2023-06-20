@@ -164,17 +164,16 @@
 
 	Una vez dentro del contenedor, tendrás acceso completo al sistema de archivos del host y podrás explorarlo para buscar información sensible o modificar archivos según sea necesario. 
 	Esto efectivamente escala tus privilegios en el sistema.
-	Es importante destacar que este método de escalado de privilegios solo funcionará si el usuario actual tiene acceso al grupo LXD en el sistema comprometido y si LXD está mal configurado o no tiene las restricciones de seguridad adecuadas.
+	Es importante destacar que este método de escalado de privilegios solo funcionará si el usuario actual tiene acceso al grupo LXD en el sistema comprometido y si LXD está mal configurado o no tiene 	las restricciones de seguridad adecuadas.
 	Además, este método no funcionará si el sistema no tiene LXD instalado.
 
 
 
 - ***Burp Suite***: Plataforma integrada para realizar pruebas de seguridad de aplicaciones web. Su funcionalidad incluye interceptación y modificación de solicitudes, escaneo automático de vulnerabilidades, repetidor (para manipular y reenviar solicitudes individuales), decodificador de datos y mucho más.
 
-Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
+	Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliamente utilizada para el pentesting y la configuración sería la siguiente:
 
-	 
-  	Abre Burp Suite.
+	Abre Burp Suite.
   	En la pestaña "Proxy" -> "Options" -> "Add", asegúrate de tener un listener en la interfaz de bucle invertido (127.0.0.1) en el puerto 8080 (o el puerto que prefieras).
   	Configura tu navegador para que use el proxy de Burp Suite (127.0.0.1 en el puerto 8080) para el tráfico HTTP y HTTPS.
   	Habilita la intercepción en la pestaña "Intercept" y navega por la web. El tráfico se interceptará en Burp Suite, permitiéndote analizar y modificar las solicitudes.
@@ -217,11 +216,10 @@ Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliam
 
   Una de las principales ventajas de Steghide es que mantiene la apariencia original del archivo mientras oculta información en él. Por ejemplo, si ocultas información en una imagen utilizando Steghide, la imagen seguirá pareciendo una imagen normal a simple vista.
 
-Steghide también soporta cifrado. Esto significa que la información oculta puede ser cifrada con una contraseña, proporcionando una capa adicional de seguridad. Solo alguien que conozca la contraseña correcta podrá extraer y descifrar la información oculta.
+	Steghide también soporta cifrado. Esto significa que la información oculta puede ser cifrada con una contraseña, proporcionando una capa adicional de seguridad. Solo alguien que conozca la 		contraseña correcta podrá extraer y descifrar la información oculta.
 
 	Ejemplo de comando para ocultar un archivo: steghide embed -cf picture.jpg -ef secret.txt
-
- 	En este ejemplo, embed es el comando para incrustar información, -cf picture.jpg especifica el archivo de portador (la imagen donde se ocultará la información) y -ef secret.txt especifica el archivo 	que se va a ocultar.
+	En este ejemplo, embed es el comando para incrustar información, -cf picture.jpg especifica el archivo de portador (la imagen donde se ocultará la información) y -ef secret.txt especifica el 		archivo que se va a ocultar.
 
   	Ejemplo de comando para extraer un archivo oculto: steghide extract -sf picture.jpg
 
