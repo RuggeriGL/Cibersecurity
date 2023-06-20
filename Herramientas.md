@@ -212,3 +212,19 @@ Ejemplo de comando: No es una herramienta de línea de comandos, pero es ampliam
 	Análisis de hash y generación de hash (por ejemplo, MD5, SHA1, etc.)
 	Y muchas otras operaciones relacionadas con la ciberseguridad y el análisis de datos.
 
+
+- ***StegHide***: Herramienta de esteganografía de línea de comandos de código abierto. La esteganografía es la práctica de ocultar información secreta dentro de un archivo ordinario de una manera que no se puede detectar fácilmente. En el caso de Steghide, se puede usar para incrustar información en una variedad de tipos de archivos, pero es más comúnmente utilizado con imágenes y archivos de audio.
+
+  Una de las principales ventajas de Steghide es que mantiene la apariencia original del archivo mientras oculta información en él. Por ejemplo, si ocultas información en una imagen utilizando Steghide, la imagen seguirá pareciendo una imagen normal a simple vista.
+
+Steghide también soporta cifrado. Esto significa que la información oculta puede ser cifrada con una contraseña, proporcionando una capa adicional de seguridad. Solo alguien que conozca la contraseña correcta podrá extraer y descifrar la información oculta.
+
+	Ejemplo de comando para ocultar un archivo: steghide embed -cf picture.jpg -ef secret.txt
+
+ 	En este ejemplo, embed es el comando para incrustar información, -cf picture.jpg especifica el archivo de portador (la imagen donde se ocultará la información) y -ef secret.txt especifica el archivo 	que se va a ocultar.
+
+  	Ejemplo de comando para extraer un archivo oculto: steghide extract -sf picture.jpg
+
+	Donde extract es el comando para extraer información y -sf picture.jpg especifica el archivo del que se extraerá la información. Steghide te pedirá la contraseña que se utilizó para incrustar la 	información.	
+
+
