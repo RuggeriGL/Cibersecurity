@@ -258,4 +258,4 @@ Esto explotaría una vulnerabilidad LFI para incluir el archivo **/etc/passwd** 
 
 -> URLs sin proteger HTTPS: Si el sitio está utilizando HTTP en lugar de HTTPS, la comunicación entre el cliente y el servidor no está encriptada y puede ser vulnerable a ataques de intermediario (MITM).
 
-
+- ***WPScan***:
