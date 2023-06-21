@@ -258,4 +258,23 @@ Esto explotaría una vulnerabilidad LFI para incluir el archivo **/etc/passwd** 
 
 -> URLs sin proteger HTTPS: Si el sitio está utilizando HTTP en lugar de HTTPS, la comunicación entre el cliente y el servidor no está encriptada y puede ser vulnerable a ataques de intermediario (MITM).
 
-- ***WPScan***:
+- ***WPScan***: WPScan es una herramienta de escaneo de seguridad muy útil y gratuita que permite a los usuarios o probadores de penetración escanear sitios web de WordPress para detectar posibles vulnerabilidades. Es una herramienta de línea de comandos escrita en Ruby que está diseñada para ser utilizada por administradores de seguridad y profesionales de pruebas de penetración.
+
+WPScan puede ayudar a detectar varios tipos de vulnerabilidades, como:
+
+-> Enumeración de usuarios: WPScan puede enumerar los nombres de usuario que se utilizan en un sitio de WordPress.
+
+-> Detectar plugins y temas: WPScan puede detectar y listar los plugins y temas que se utilizan en un sitio de WordPress, y luego buscar en su base de datos de vulnerabilidades para ver si estos plugins y temas tienen alguna vulnerabilidad conocida.
+
+-> Detectar vulnerabilidades de la versión de WordPress: WPScan también puede detectar la versión de WordPress que se utiliza y buscar en su base de datos de vulnerabilidades para ver si esa versión tiene alguna vulnerabilidad conocida.
+
+
+***Ejemplo de Comando***: 	-wpscan --url http://example.com
+
+Para realizar un escaneo más **exhaustivo**, que incluya la **enumeración de usuarios y la detección de plugins**, puedes utilizar las siguientes opciones:
+
+
+	wpscan --url http://example.com --enumerate u,p
+
+
+
