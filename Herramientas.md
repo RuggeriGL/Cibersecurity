@@ -223,6 +223,8 @@
 
   	***Ejemplo de comando para extraer un archivo oculto***: steghide extract -sf picture.jpg
 
-	Donde extract es el comando para extraer información y -sf picture.jpg especifica el archivo del que se extraerá la información. Steghide te pedirá la contraseña que se utilizó para incrustar la 	información.	
+	Donde extract es el comando para extraer información y -sf picture.jpg especifica el archivo del que se extraerá la información. Steghide te pedirá la contraseña que se utilizó para incrustar la 	información.
+
+ - ***LFI***: 
 
 
