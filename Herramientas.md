@@ -225,6 +225,37 @@
 
 	Donde extract es el comando para extraer información y -sf picture.jpg especifica el archivo del que se extraerá la información. Steghide te pedirá la contraseña que se utilizó para incrustar la 	información.
 
- - ***LFI***: 
+ - ***LFI***: Significa Local File Inclusion. Es una vulnerabilidad común que permite a un atacante leer (y a veces ejecutar) archivos en el servidor de aplicaciones web.
+
+Cuando una aplicación web no valida adecuadamente las entradas del usuario que se utilizan para cargar archivos desde el sistema de archivos local, un atacante puede manipular la entrada para leer archivos que no deberían ser accesibles. Los archivos que suelen ser el objetivo de los ataques LFI incluyen los archivos de configuración, los archivos de registro y los archivos de código fuente, todos los cuales pueden contener información sensible.
+
+En algunos casos, si el servidor está mal configurado, un ataque de LFI puede incluso permitir la ejecución de código arbitrario. Esto se hace generalmente incluyendo archivos que contienen código PHP (o el lenguaje en el que esté escrita la aplicación web) y que el atacante ha logrado colocar en el sistema de archivos, a menudo a través de técnicas como el envenenamiento de archivos de registro.
+
+***Ejemplo de vulnerabilidad de una URL***: http://example.com/viewProfile.php?userId=123
+
+La aplicación web carga el perfil de usuario de un archivo en el sistema de archivos local. Cada usuario tiene un archivo de perfil con un nombre que coincide con su ID de usuario. Entonces, el código PHP en viewProfile.php podría ser algo así:
+
+	<?php
+    		**$userId = $_GET['userId'];
+   	 	include("/var/www/user_profiles/" . $userId . ".php");
+	?>
+
+Aquí, la aplicación web está utilizando la entrada del usuario directamente para determinar qué archivo incluir. Si un atacante puede controlar la entrada userId, puede ser capaz de incluir archivos arbitrarios. Por ejemplo, podrían utilizar la siguiente URL:
+
+	http://example.com/viewProfile.php?userId=../../../etc/passwd
+
+Esto explotaría una vulnerabilidad LFI para incluir el archivo **/etc/passwd** del sistema Unix, que contiene información sobre las cuentas de usuario del sistema.
+
+  Hay algunas cosas que puedes buscar en las URL que pueden indicar que un sitio podría ser vulnerable:
+
+-> Parámetros de URL: Si la URL tiene parámetros (como http://example.com/index.php?page=contact), esto podría indicar que el servidor está usando la entrada del usuario para determinar qué contenido mostrar. Este podría ser un indicador de una potencial vulnerabilidad de Inyección de SQL, LFI (Inclusión de Archivo Local), o RFI (Inclusión de Archivo Remoto).
+
+-> Extensiones de archivos: Las extensiones de archivo en las URL (como .php, .asp, .aspx, .jsp, etc.) pueden dar una idea del tipo de tecnologías de servidor que el sitio web está utilizando, lo que puede ayudar a determinar qué tipos de ataques podrían ser efectivos.
+
+-> Formularios de entrada de usuario: Si una página web tiene un formulario para que el usuario introduzca información, es posible que sea vulnerable a ataques como la Inyección de SQL o Cross-Site Scripting (XSS).
+
+-> Autenticación o sesión en la URL: Si ves algo que parece ser un ID de sesión o de usuario en la URL (por ejemplo, http://example.com/profile?userid=123), esto podría indicar que el sitio es vulnerable a ataques de predicción de sesión o de secuestro de sesión.
+
+-> URLs sin proteger HTTPS: Si el sitio está utilizando HTTP en lugar de HTTPS, la comunicación entre el cliente y el servidor no está encriptada y puede ser vulnerable a ataques de intermediario (MITM).
 
 
