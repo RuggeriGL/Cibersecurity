@@ -306,7 +306,7 @@ hashes.txt: Este es el archivo que contiene los hashes que estás intentando des
 
 /usr/share/wordlists/rockyou.txt: Esta es la ubicación del diccionario de palabras que se utilizará para el ataque de diccionario.
 
-***Consola para Reverse Shell***: Estos son dos comandos que nos van a permitir tener una consola en condiciones cuando accedemos por reverse shell las cuales son mucho mas didacticas e intercativas.
+***Consola para Reverse Shell***: Estos son dos comandos que nos van a permitir tener una consola en condiciones cuando accedemos por reverse shell las cuales son mucho mas didácticas e interactivas.
 Cuando ingresamos a la consola en reverse, si esta no tiene python, usaremos el siguiente comando:
 
 **script /dev/null -c bash**
