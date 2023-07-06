@@ -305,3 +305,12 @@ Hashcat admite cinco modos de ataque únicos para llevar a cabo una variedad de 
 hashes.txt: Este es el archivo que contiene los hashes que estás intentando descifrar.
 
 /usr/share/wordlists/rockyou.txt: Esta es la ubicación del diccionario de palabras que se utilizará para el ataque de diccionario.
+
+***Consola para Reverse Shell***: Estos son dos comandos que nos van a permitir tener una consola en condiciones cuando accedemos por reverse shell las cuales son mucho mas didacticas e intercativas.
+Cuando ingresamos a la consola en reverse, si esta no tiene python, usaremos el siguiente comando:
+
+**script /dev/null -c bash**
+
+Si la consola Si tiene Python, usaremos el siguiente comando: 
+
+**python3 -c 'import pty;pty.spawn("/bin/bash")**
