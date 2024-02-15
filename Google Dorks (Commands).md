@@ -1,8 +1,3 @@
-
-Ej: "filetype:sql "MySQL dump" (pass|password|passwd|pwd)" <-- Los paréntesis sirven para buscar cualquiera de esas palabras como contenido en ese fichero o dump.
-
-
-
 Comandos principales Google Hacking
 
 A continuación se muestran los comandos principales que podemos utilizar con Google. Hay que tener en cuenta que todos ellos deben ir seguidos (sin espacios) de la consulta que quiere realizarse:
@@ -50,3 +45,6 @@ OR (ó |) - Busca páginas que contengan un término u otro.
 + - Permite incluir palabras que Google por defecto no tiene en cuenta al ser muy comunes (en español: "de", "el", "la".....). También se usa para que Google distinga acentos, diéresis y la letra ñ, que normalmente son elementos que no distingue.
 
 * - Comodín. Utilizado para sustituir una palabra. Suele combinarse con el operador de literalidad (" ").
+ 
+
+Ej: "filetype:sql "MySQL dump" (pass|password|passwd|pwd)" <-- Los paréntesis sirven para buscar cualquiera de esas palabras como contenido en ese fichero o dump.
