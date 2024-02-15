@@ -1,0 +1,7 @@
+"Site:" Limita una búsqueda a la página web que se especifique después del comando. Ej: "site:udemy.com ficheros pdf"
+"Filetype:" Limita una búsqueda a un tipo de fichero que se especifique en una página web, Ej: "site:udemy.com filetype:pdf"
+" "" ": Las comillas entre palabras permite buscar dicha palabra exacta, por ejemplo Index, Logs, etc. Ej: "Index of" / "chat/logs"
+"allintitle:" Permite buscar que en el título de dicha web o sitio, aparezca la palabra que le indiquemos. Ej: "site:gov filetype:pdf allintitle:restricted"
+
+Combinando los anteriores, podríamos realizar una consulta con un peligro relativamente alto para conseguir cosas muy concretas. 
+Ej: "filetype:sql "MySQL dump" (pass|password|passwd|pwd)" <-- Los paréntesis sirven para buscar cualquiera de esas palabras como contenido en ese fichero o dump.
