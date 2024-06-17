@@ -36,9 +36,9 @@ Operadores Booleanos Google Hacking
 
 Google hace uso de los operadores booleanos para realizar búsquedas combinadas de varios términos. Esos operadores son una serie de símbolos que Google reconoce y modifican la búsqueda realizada:
 
-" " - Busca las palabras exactas.
+" "  Busca las palabras exactas.
 
-- - Excluye una palabra de la búsqueda. (Ej: gmail -hotmail, busca páginas en las que aparezca la palabra gmail y no aparezca la palabra hotmail)
+'-' Excluye una palabra de la búsqueda. (Ej: gmail -hotmail, busca páginas en las que aparezca la palabra gmail y no aparezca la palabra hotmail)
 
 OR (ó |) - Busca páginas que contengan un término u otro.
 
