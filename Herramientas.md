@@ -326,3 +326,6 @@ Si la consola Si tiene Python, usaremos el siguiente comando:
 Si la consola a la que estas atacando tiene signos de tener python instalado, puedes usar el siguiente comando para escalar los privilegios. 
 
 **python -c 'import os; os.execl("/bin/sh", "sh", "-p")'**
+
+
+Maltego: Herramienta excelente de recopilación de datos pasiva para extraer información muy precisa basada en el nombre que tu le des de alguna persona, alias o alguna entidad empresarial. Posee "Transformadores" los cuales van a ser los encargados de extraer la información que necesites en función de lo que busques, cada transformador sirve para algo en concreto o para buscar en sitios o paginas web específicas. 
