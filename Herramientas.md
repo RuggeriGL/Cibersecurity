@@ -106,8 +106,7 @@
 	ssh://10.10.123.184: Este es el protocolo y la dirección IP del objetivo al que se dirigirá el ataque. 
 	En este caso, el protocolo es SSH (Secure Shell), que es un protocolo de red utilizado para acceder de forma segura a sistemas remotos. La dirección IP del objetivo es "10.10.123.184".
 
-
- 
+	Algunas otras herramientas que pueden suplir el trabajo de Hydra son: Ophcrack, L0phtCrack, RainbowCrack o Medusa.
 	
 	
 - ***LXD***: LXD (Linux Container Daemon) es una herramienta para gestionar contenedores Linux a nivel de sistema operativo. Estos contenedores son similares a las máquinas virtuales, 
