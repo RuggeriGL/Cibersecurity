@@ -37,16 +37,26 @@ Modlishka es una herramienta avanzada de proxy inverso utilizada para intercepta
 
 ---------------------------------------------------------
 
+- The_spy_job
+
 Ideal para analistas de seguridad, investigadores digitales y entusiastas de la ciberseguridad, The_spy_job integra múltiples fuentes de datos para ofrecerte lo siguiente:
 
 ☑️ OSINT a Páginas Webs: Descubre detalles como la información del servidor, encriptado SSL, y lista todas las URLs de un dominio.
+
 ☑️ OSINT a Personas: Investiga perfiles en redes sociales, publicaciones, y más con Google Dorks y otras técnicas.
+
 ☑️ OSINT a Nicknames/Alias: Encuentra cuentas en redes sociales y más asociadas con un alias específico.
+
 ☑️ OSINT a Redes Sociales: Obtén información detallada de cuentas en Instagram, TikTok, Twitter, Twitch y GitHub sin necesidad de iniciar sesión.
+
 ☑️ OSINT a Emails: Verifica la existencia de un email, busca cuentas asociadas en redes sociales y más.
+
 ☑️ OSINT a Números de Teléfono: Descubre detalles como la compañía de telecomunicaciones y más.
+
 ☑️ OSINT a IPs Públicas: Localiza la ciudad exacta, busca puertos abiertos y realiza ping desde varios países.
+
 ☑️ OSINT a Videos/Canales YouTube: Accede a detalles como estadísticas de visualización, geolocalización, y más de videos y canales.
+
 ☑️ OSINT a Imágenes: Analiza metadatos, realiza búsquedas inversas y amplía imágenes sin perder calidad.
 
 
