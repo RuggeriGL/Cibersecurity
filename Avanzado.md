@@ -11,6 +11,7 @@ Con PhoneInfoga, puedes:
 
 
 Esta herramienta no solo es vital para investigaciones de seguridad, sino también para verificar contactos y prevenir fraudes. Aquí te muestro capturas de pantalla de cómo he utilizado PhoneInfoga en un escenario real.
+---------------------------------------------------------
 
 - HIDDENEYE
 Con HiddenEye puedes clonar páginas web casi idénticas para realizar ataques de phishing avanzados. Ideal para pruebas de penetración y para comprender cómo protegerte contra estas amenazas.
