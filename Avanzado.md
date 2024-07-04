@@ -11,6 +11,7 @@ Con PhoneInfoga, puedes:
 
 
 Esta herramienta no solo es vital para investigaciones de seguridad, sino también para verificar contactos y prevenir fraudes. Aquí te muestro capturas de pantalla de cómo he utilizado PhoneInfoga en un escenario real.
+
 ---------------------------------------------------------
 
 - HIDDENEYE
